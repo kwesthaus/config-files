@@ -1,0 +1,83 @@
+# .gitignore
+#
+# this file blacklists new configuration folders under the main four (dotfiles,
+# etc, root, usr) by default so that I'm forced to think before I add
+# 
+# this strategy will hopefully keep me from committing any secrets by accident
+
+# blacklist files/folders in same directory as the .gitignore file, which also
+# blocks us from seeing nested contents
+/*
+
+# whitelist specific top-level files
+!.gitignore
+
+# dotfiles
+# whitelist dotfiles folder itself, which also allows us to see nested contents
+!dotfiles/
+# blacklist all files/folders directly under dotfiles so we can't see nested
+# contents
+dotfiles/*
+# whitelist specific files/folders under dotfiles
+# progressively allow directory (and contents), block contents, then allow
+# specific subfolder to allow only specific nested files/folders
+!dotfiles/bash/
+!dotfiles/gdb/
+!dotfiles/git/
+!dotfiles/keymap/
+!dotfiles/ssh/
+dotfiles/ssh/*
+!dotfiles/ssh/.ssh/
+dotfiles/ssh/.ssh/*
+!dotfiles/ssh/.ssh/config
+!dotfiles/tmux/
+!dotfiles/vim/
+dotfiles/vim/*
+!dotfiles/vim/.vimrc
+!dotfiles/vscode/
+dotfiles/vscode/*
+!dotfiles/vscode/.config/
+!dotfiles/wallpapers/
+!dotfiles/xfce/
+!dotfiles/zsh/
+!dotfiles/.stowrc
+
+# etc
+!etc/
+etc/*
+!etc/chrony/
+!etc/fstab/
+!etc/host/
+!etc/iptables/
+!etc/locale/
+!etc/mkinitcpio/
+!etc/sudo/
+!etc/systemd-resolved/
+!etc/usb-mods/
+!etc/weekly-backup/
+!etc/.stowrc
+
+# root
+!root/
+root/*
+!root/ssh/
+root/ssh/*
+!root/ssh/root/
+root/ssh/root/*
+!root/ssh/root/.ssh/
+root/ssh/root/.ssh/*
+!root/ssh/root/.ssh/config
+!root/systemd-boot/
+!root/.stowrc
+!root/README.md
+
+# usr
+!usr/
+usr/*
+!usr/keyboard/
+!usr/mic-toggle/
+!usr/nas-mount/
+!usr/openvpn/
+!usr/osu/
+!usr/restic-backup/
+!usr/.stowrc

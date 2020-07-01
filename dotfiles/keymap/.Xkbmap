@@ -1,0 +1,1 @@
+-rules evdev -model pc105 -layout us -keycodes evdev-mine -option compose:rctrl -option terminate:ctrl_alt_bksp

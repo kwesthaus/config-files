@@ -1,0 +1,12 @@
+[user]
+	email = kwesthaus@users.noreply.github.com
+	name = Kyle Westhaus
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[diff]
+	algorithm = histogram
+[pull]
+	rebase = false

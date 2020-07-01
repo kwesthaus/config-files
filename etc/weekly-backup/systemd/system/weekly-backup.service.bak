@@ -1,0 +1,7 @@
+[Unit]
+Description=Run a restic backup (to NAS and to backblaze)
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /usr/local/bin/restic-bak.sh

@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Quiet Light",
+    "window.zoomLevel": 0,
+    "git.enableSmartCommit": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "[latex]": {
+        
+    },
+    "cSpell.userWords": [
+        "Westhaus"
+    ]
+}
