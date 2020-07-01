@@ -11,6 +11,8 @@
 
 # whitelist specific top-level files
 !.gitignore
+!LICENSE
+!README.md
 
 # dotfiles
 # whitelist dotfiles folder itself, which also allows us to see nested contents
