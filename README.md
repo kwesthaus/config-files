@@ -8,6 +8,8 @@ the configuration files across the filesystem at a single point of change.
 
 I use a detailed .gitignore in an attempt to avoid sharing secrets on GitHub.
 
+See also my [Arch Linux install notes gist](https://gist.github.com/kwesthaus/2819d9dccf7cc314dc3ad7b8b5bddea7) and [odroid-server-config repo](https://github.com/kwesthaus/odroid-server-config).
+
 Some files in this repository end with *.bak. When installing Arch Linux, I
 chose to have an encrypted disk via LVM on LUKS with separate / and /home
 partitions. Because I store my configuration files in ~/, this choice
