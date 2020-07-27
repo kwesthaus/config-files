@@ -15,5 +15,5 @@ UUID=66E6-11B3      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,cod
 UUID=336de839-c927-4ee8-b326-4b2e886a6765	none      	swap      	defaults  	0 0
 
 # NAS drives
-//192.168.1.90/media /mnt/media cifs credentials=/home/orville/.credentials/smbcredentials.txt,uid=orville,gid=orville,nofail 0 0
-//192.168.1.90/privdata /mnt/privdata cifs credentials=/home/orville/.credentials/smbcredentials.txt,uid=orville,gid=orville,nofail 0 0
+//alarm.localdomain/media /mnt/media cifs credentials=/home/orville/.credentials/smbcredentials.txt,uid=orville,gid=orville,nofail 0 0
+//alarm.localdomain/privdata /mnt/privdata cifs credentials=/home/orville/.credentials/smbcredentials.txt,uid=orville,gid=orville,nofail 0 0
