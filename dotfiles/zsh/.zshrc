@@ -30,6 +30,7 @@ alias ga='git add'
 alias gc='git commit'
 alias gb='git branch'
 alias glo='git log --pretty=oneline'
+alias glon="git log --pretty=oneline | head -n"
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
