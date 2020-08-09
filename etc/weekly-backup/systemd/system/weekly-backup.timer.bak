@@ -1,8 +1,0 @@
-[Unit]
-Description=Run a restic backup (to NAS and to backblaze) every Monday morning
-
-[Timer]
-OnCalendar=Mon 04:00
-
-[Install]
-WantedBy=timers.target

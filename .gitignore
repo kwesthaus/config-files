@@ -56,7 +56,7 @@ etc/*
 !etc/sudo/
 !etc/systemd-resolved/
 !etc/usb-mods/
-!etc/weekly-backup/
+!etc/backup/
 !etc/.stowrc
 
 # root

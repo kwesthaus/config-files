@@ -1,0 +1,8 @@
+[Unit]
+Description=Run a restic backup (to NAS and to backblaze) every morning (in local timezone)
+
+[Timer]
+OnCalendar=04:00
+
+[Install]
+WantedBy=timers.target
