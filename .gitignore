@@ -57,6 +57,7 @@ etc/*
 !etc/systemd-resolved/
 !etc/usb-mods/
 !etc/backup/
+!etc/pulseaudio/
 !etc/.stowrc
 
 # root
