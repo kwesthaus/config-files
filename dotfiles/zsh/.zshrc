@@ -22,8 +22,7 @@ compinit
 powerline-daemon -q
 . /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 
-alias cat='bat --paging never'
-alias catp=bat
+alias batl='bat --paging never'
 alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
