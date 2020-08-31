@@ -58,6 +58,7 @@ etc/*
 !etc/usb-mods/
 !etc/backup/
 !etc/pulseaudio/
+!etc/keyboard/
 !etc/.stowrc
 
 # root

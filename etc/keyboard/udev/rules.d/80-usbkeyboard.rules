@@ -1,0 +1,14 @@
+# Udev rules for the GMMK-TKL (a USB keyboard)
+
+# Segments below which end in S match a parent (and therefore rule out devices which are not descendants in the tree)
+# Segments which do not end in S match a specific device
+# This rule only applies when plugged in (not removed)
+# The idVendor and idProduct attributes match the GMMK (USB keyboard)
+# However, the keyboard presents multiple USB devices
+# So the name and capabilities/led attributes match a specific node for one of the devices in the tree for the GMMK
+# This ensures that the script only runs once
+#
+# The env variables must be set to ensure the call to setxkbmap in the script can communicate with the X server
+# The Run directive is best at just calling a script
+# Do anything more complex (background with "&", multiple commands with ";") in scripts
+ACTION=="add" ATTR{name}=="SONiX USB DEVICE" ATTR{capabilities/led}=="1f" ATTRS{idVendor}=="0c45" ATTRS{idProduct}=="652f" ENV{HOME}="/home/orville" ENV{XAUTHORITY}="/home/orville/.Xauthority" ENV{DISPLAY}=":0.0" RUN+="/usr/local/bin/keyboard-usb-config.sh"
