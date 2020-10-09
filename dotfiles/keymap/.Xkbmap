@@ -1,1 +1,1 @@
--rules evdev -model pc105 -layout us -keycodes evdev-mine -option compose:rctrl -option terminate:ctrl_alt_bksp
+-types "complete+orville" -symbols "pc+us+inet(evdev)+terminate(ctrl_alt_bksp)+orville(esc-to-compose)+orville(caps-to-esc)+orville(rctl-to-menu)+orville(menu-to-rctl)+orville(vim-arrows)+orville(mail-pane-cycle)" -verbose 10
