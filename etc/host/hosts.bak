@@ -5,6 +5,7 @@
 127.0.1.1    chirripo.localdomain chirripo
 
 # odroid server
-192.168.1.90 alarm.localdomain alarm
+192.168.1.120 alarm.localdomain alarm
 # college printer
-192.168.1.201 epsonxp410.localdomain epsonxp410
+192.168.1.130 epsonxp410.localdomain epsonxp410
+
