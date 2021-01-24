@@ -44,6 +44,8 @@ source /usr/bin/virtualenvwrapper.sh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval "$(rbenv init -)"
+
 # END MY BLOCK
 ################################################################################
 
