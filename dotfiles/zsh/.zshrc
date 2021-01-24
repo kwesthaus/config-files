@@ -20,7 +20,7 @@ compinit
 # I INSERTED MANUALLY EVERYTHING IN THIS BLOCK
 
 powerline-daemon -q
-. /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+. /usr/share/powerline/bindings/zsh/powerline.zsh
 
 alias batl='bat --paging never'
 alias gs='git status'
