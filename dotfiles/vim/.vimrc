@@ -80,6 +80,7 @@ set smarttab
 set exrc
 set secure
 set number
+set cursorline
 set laststatus=2
 syntax on
 
