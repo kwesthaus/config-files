@@ -34,6 +34,15 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
 
+alias rl='bundle exec rubocop'
+alias el='bundle exec erblint --lint-all'
+alias jl='yarn run eslint . --ext .html,.js'
+alias cl='yarn run stylelint "**/*.css"'
+alias rla='bundle exec rubocop -a'
+alias ela='bundle exec erblint --lint-all -a'
+alias jla='yarn run eslint . --ext .html,.js --fix'
+alias cla='yarn run stylelint "**/*.css" --fix'
+
 export EDITOR=vim
 
 export TERM="xterm-256color"
