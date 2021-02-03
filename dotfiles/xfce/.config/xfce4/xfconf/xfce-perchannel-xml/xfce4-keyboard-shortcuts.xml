@@ -37,7 +37,6 @@
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Super&gt;f" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Super&gt;w" type="string" value="libreoffice --writer">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -80,6 +79,7 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Super&gt;F1" type="string" value="/usr/local/bin/microphone-toggle.sh"/>
+      <property name="&lt;Super&gt;semicolon" type="string" value="xflock4"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
