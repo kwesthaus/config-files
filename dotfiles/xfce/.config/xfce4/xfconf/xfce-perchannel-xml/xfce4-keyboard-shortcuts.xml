@@ -64,7 +64,6 @@
       <property name="Print" type="string" value="xfce4-screenshooter">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;b" type="string" value="firefox">
       <property name="&lt;Super&gt;j" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -78,6 +77,9 @@
       </property>
       <property name="&lt;Super&gt;F1" type="string" value="/usr/local/bin/microphone-toggle.sh"/>
       <property name="&lt;Super&gt;semicolon" type="string" value="xflock4"/>
+      <property name="&lt;Super&gt;b" type="string" value="firefox">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">
