@@ -60,6 +60,7 @@ etc/*
 !etc/pulseaudio/
 !etc/keyboard/
 !etc/.stowrc
+!etc/pkglist/
 
 # root
 !root/
