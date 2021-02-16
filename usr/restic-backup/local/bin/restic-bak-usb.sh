@@ -35,6 +35,7 @@ do
 	fi
 	restic -p $CREDENTIAL_PATH -r $RESTIC_REMOTE backup $mount_loc --tag $USB --exclude-file=$EXCLUDE_PATH
 	restic -p $CREDENTIAL_PATH -r $RESTIC_REMOTE forget --tag $USB --keep-monthly 12 --keep-yearly 100 --prune
+	restic -p $CREDENTIAL_PATH -r $RESTIC_REMOTE check
 done
 sleep 5
 echo "Done"
