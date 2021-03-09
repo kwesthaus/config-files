@@ -49,6 +49,7 @@ dotfiles/vscode/*
 !etc/
 etc/*
 !etc/chrony/
+!etc/display/
 !etc/fstab/
 !etc/host/
 !etc/iptables/
