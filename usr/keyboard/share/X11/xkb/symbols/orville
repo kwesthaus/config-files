@@ -20,24 +20,24 @@ xkb_symbols "menu-to-rctl" {
 
 partial alphanumeric_keys
 xkb_symbols "vim-arrows" {
-    key <AC06> {
+    key <AD06> {
         type[Group1] = "SUPER_ALPHABETIC",
-        symbols[Group1] = [ h, H, Left, Left ],
+        symbols[Group1] = [ y, Y, Left, Left ],
         actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<LEFT>, clearmods=Mod4), RedirectKey(keycode=<LEFT>, clearmods=Mod4) ]
     };
-    key <AC07> {
+    key <AD07> {
         type[Group1] = "SUPER_ALPHABETIC",
-        symbols[Group1] = [ j, J, Down, Down ],
+        symbols[Group1] = [ u, U, Down, Down ],
         actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<DOWN>, clearmods=Mod4), RedirectKey(keycode=<DOWN>, clearmods=Mod4) ]
     };
-    key <AC08> {
+    key <AD08> {
         type[Group1] = "SUPER_ALPHABETIC",
-        symbols[Group1] = [ k, K, Up, Up ],
+        symbols[Group1] = [ i, I, Up, Up ],
         actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<UP>, clearmods=Mod4), RedirectKey(keycode=<UP>, clearmods=Mod4) ]
     };
-    key <AC09> {
+    key <AD09> {
         type[Group1] = "SUPER_ALPHABETIC",
-        symbols[Group1] = [ l, L, Right, Right ],
+        symbols[Group1] = [ o, O, Right, Right ],
         actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<RGHT>, clearmods=Mod4), RedirectKey(keycode=<RGHT>, clearmods=Mod4) ]
     };
 };
