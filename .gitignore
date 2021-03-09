@@ -26,6 +26,7 @@ dotfiles/*
 !dotfiles/bash/
 !dotfiles/gdb/
 !dotfiles/git/
+!dotfiles/i3/
 !dotfiles/keymap/
 !dotfiles/ssh/
 dotfiles/ssh/*
