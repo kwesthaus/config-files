@@ -59,7 +59,7 @@ bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # lock screen
-bindsym $mod+semicolon exec --no-startup-id i3lock
+bindsym $mod+semicolon exec --no-startup-id ~/.config/i3/i3lock-color.sh
 
 # change focus
 bindsym $mod+h focus left
