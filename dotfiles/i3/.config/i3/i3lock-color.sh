@@ -25,4 +25,4 @@ i3lock \
 	-k \
 	--timesize=26 \
 	--datesize=13 \
-	--datestr=%a %B %d
+	--datestr="%a %B %d"
