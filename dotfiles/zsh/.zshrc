@@ -111,6 +111,33 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+################################################################################
+# I INSERTED MANUALLY EVERYTHING IN THIS BLOCK
+
+powerline-daemon -q
+. /usr/share/powerline/bindings/zsh/powerline.zsh
+
+alias batl='bat --paging never'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias glo='git log --pretty=oneline'
+alias glon="git log --pretty=oneline | head -n"
+alias ll='ls -l'
+alias la='ls -a'
+alias lal='ls -la'
+
+export EDITOR=vim
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/active
+source /usr/bin/virtualenvwrapper.sh
+
+# END MY BLOCK
+################################################################################
+
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
