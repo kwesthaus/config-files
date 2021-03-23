@@ -38,6 +38,7 @@ alias par='ping archlinux.org'
 alias pal='ping alarm.localdomain'
 alias teef='tee 1>/dev/null'
 alias rsync='rsync --progress'
+alias nmapf='nmap --min-rate 4500 --max-rtt-timeout 1500ms'
 
 export EDITOR=vim
 
