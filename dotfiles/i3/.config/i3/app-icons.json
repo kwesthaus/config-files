@@ -7,5 +7,6 @@
     "nautilus": "folder-open",
     "clementine": "music",
     "vlc": "play",
-    "signal": "comment"
+    "signal": "comment",
+    "URxvt": "terminal"
 }
