@@ -162,6 +162,9 @@ cursor_mode() {
     zle -N zle-line-init
 }
 
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
 # END MY BLOCK
 ################################################################################
 
