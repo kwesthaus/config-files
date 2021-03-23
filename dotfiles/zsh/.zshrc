@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt autocd extendedglob nomatch notify
+setopt autocd autopushd extendedglob nomatch notify
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
@@ -39,6 +39,9 @@ alias pal='ping alarm.localdomain'
 alias teef='tee 1>/dev/null'
 alias rsync='rsync --progress'
 alias nmapf='nmap --min-rate 4500 --max-rtt-timeout 1500ms'
+
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 cursor_mode() {
     # See https://ttssh2.osdn.jp/manual/4/en/usage/tips/vim.html for cursors
