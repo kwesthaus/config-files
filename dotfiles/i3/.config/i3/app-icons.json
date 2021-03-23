@@ -9,5 +9,6 @@
     "vlc": "play",
     "signal": "comment",
     "URxvt": "terminal",
-    "Vmware": "vector-square"
+    "Vmware": "vector-square",
+    "VirtualBox*": "box"
 }
