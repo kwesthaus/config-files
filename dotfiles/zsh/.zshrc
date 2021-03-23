@@ -128,6 +128,7 @@ alias glon="git log --pretty=oneline | head -n"
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
+alias v='vim'
 
 export EDITOR=vim
 
