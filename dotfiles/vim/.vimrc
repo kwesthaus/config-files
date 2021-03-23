@@ -87,6 +87,10 @@ set cursorline
 set laststatus=2
 syntax on
 
+let &t_SI = "\<esc>[5 q"
+let &t_SR = "\<esc>[3 q"
+let &t_EI = "\<esc>[2 q"
+
 nnoremap <F5> :!g++ -Wall -Wextra % -o %:r.out<CR>
 nnoremap <F6> :!./%:r.out<CR>
 nnoremap <leader>q :TagbarOpen fj<CR>
