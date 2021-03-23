@@ -33,6 +33,7 @@ alias glon="git log --pretty=oneline | head -n"
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
+alias v='vim'
 alias par='ping archlinux.org'
 alias pal='ping alarm.localdomain'
 alias teef='tee 1>/dev/null'
