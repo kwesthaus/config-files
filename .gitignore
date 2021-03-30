@@ -25,6 +25,7 @@ dotfiles/*
 # specific subfolder to allow only specific nested files/folders
 !dotfiles/bash/
 !dotfiles/display/
+!dotfiles/dunst/
 !dotfiles/gdb/
 !dotfiles/git/
 !dotfiles/i3/
