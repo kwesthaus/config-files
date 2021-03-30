@@ -9,9 +9,12 @@ RW='#e63b2fff'
 B='#e63b2fff'
 K='#0fb037ff' # green (yellow mars but with inverted red channel)
 
+killall -SIGUSR1 dunst
+
 i3lock \
 	-i /home/kw/.wallpapers/lock-mars.png \
 	-t \
+	--nofork \
 	\
 	--insidecolor=$I \
 	--ringcolor=$R \
@@ -26,3 +29,5 @@ i3lock \
 	--timesize=26 \
 	--datesize=13 \
 	--datestr="%a %B %d"
+
+killall -SIGUSR2 dunst
