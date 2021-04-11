@@ -42,6 +42,8 @@ export EDITOR=vim
 
 export TERM="xterm-256color"
 
+export KEYTIMEOUT=1
+
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/active
 source /usr/bin/virtualenvwrapper.sh
