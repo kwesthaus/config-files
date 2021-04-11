@@ -35,6 +35,7 @@ alias la='ls -a'
 alias lal='ls -la'
 alias par='ping archlinux.org'
 alias pal='ping alarm.localdomain'
+alias teef='tee 1>/dev/null'
 
 export EDITOR=vim
 
