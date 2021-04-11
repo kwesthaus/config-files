@@ -33,6 +33,8 @@ alias glon="git log --pretty=oneline | head -n"
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
+alias par='ping archlinux.org'
+alias pal='ping alarm.localdomain'
 
 export EDITOR=vim
 
