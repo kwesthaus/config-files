@@ -83,6 +83,9 @@ source /usr/bin/virtualenvwrapper.sh
 # zsh-bd
 source $HOME/.config/zsh/plugins/bd/bd.zsh
 
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # END MY BLOCK
