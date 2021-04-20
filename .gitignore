@@ -85,6 +85,7 @@ root/ssh/root/.ssh/*
 # usr
 !usr/
 usr/*
+!usr/fzf/
 !usr/keyboard/
 !usr/mic-toggle/
 !usr/nas-mount/

@@ -178,6 +178,9 @@ export PATH="/home/kw/.local/bin:$PATH"
 
 bindkey -v
 
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+
 cursor_mode
 
 # zsh-bd
