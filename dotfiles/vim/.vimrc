@@ -91,6 +91,7 @@ let &t_EI = "\<esc>[2 q"
 nnoremap <F5> :!g++ -Wall -Wextra % -o %:r.out<CR>
 nnoremap <F6> :!./%:r.out<CR>
 nnoremap <leader>q :TagbarOpen fj<CR>
+nnoremap <leader>v :term grip -b %<CR>
 
 let g:powerline_pycmd="py3"
 " set termguicolors
