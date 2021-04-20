@@ -130,6 +130,7 @@ alias la='ls -a'
 alias lal='ls -la'
 alias v='vim'
 alias nmapf='nmap --min-rate 4500 --max-rtt-timeout 1500ms'
+alias s='sudo'
 
 export EDITOR=vim
 
