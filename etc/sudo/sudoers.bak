@@ -83,6 +83,9 @@ root ALL=(ALL) ALL
 %wheel ALL=(ALL) NOPASSWD: /usr/local/bin/microphone-led-on.sh
 %wheel ALL=(ALL) NOPASSWD: /usr/local/bin/microphone-led-off.sh
 
+## Remember session until explicitly revoked
+Defaults:kw timestamp_timeout=-1
+
 ## Same thing without a password
 # %wheel ALL=(ALL) NOPASSWD: ALL
 

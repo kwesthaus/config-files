@@ -11,6 +11,8 @@ K='#0fb037ff' # green (yellow mars but with inverted red channel)
 
 killall -SIGUSR1 dunst
 
+sudo -K
+
 i3lock \
 	-i /home/kw/.wallpapers/lock-mars.png \
 	-t \
