@@ -80,6 +80,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/active
 source /usr/bin/virtualenvwrapper.sh
 
+# zsh-bd
+source $HOME/.config/zsh/plugins/bd/bd.zsh
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # END MY BLOCK
