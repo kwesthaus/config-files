@@ -91,6 +91,11 @@ nnoremap <F5> :!g++ -Wall -Wextra % -o %:r.out<CR>
 nnoremap <F6> :!./%:r.out<CR>
 nnoremap <leader>q :TagbarOpen fj<CR>
 
+set timeout
+set timeoutlen=1000
+set ttimeout
+set ttimeoutlen=0
+
 set noshowmode
 let g:powerline_pycmd="py3"
 " set termguicolors
