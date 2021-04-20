@@ -234,5 +234,22 @@ gaps top -8
 
 workspace_auto_back_and_forth yes
 
+# Set window border colors
+set $fg         #f0f0f0
+set $bg         #0f0f0f
+set $in         #9ef1cd
+set $urg        #f00000
+set $foc        #eeb037
+set $unf        #4e668c
+
+# class                 border  backgr. text indicator child_border
+client.focused          $foc    $bg     $fg  $in       $foc
+client.focused_inactive $unf    $bg     $fg  $in       $unf
+client.unfocused        $unf    $bg     $fg  $in       $unf
+client.urgent           $urg    $bg     $fg  $in       $urg
+client.placeholder      $bg     $bg     $fg  $in       $bg
+
+client.background       $bg
+
 # autostart windows
 exec --no-startup-id i3-msg 'workspace 1; exec firefox'
