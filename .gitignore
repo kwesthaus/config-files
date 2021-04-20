@@ -27,6 +27,7 @@ dotfiles/*
 !dotfiles/gdb/
 !dotfiles/git/
 !dotfiles/keymap/
+!dotfiles/ranger/
 !dotfiles/ssh/
 dotfiles/ssh/*
 !dotfiles/ssh/.ssh/
