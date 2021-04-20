@@ -30,6 +30,7 @@ dotfiles/*
 !dotfiles/git/
 !dotfiles/i3/
 !dotfiles/keymap/
+!dotfiles/ranger/
 !dotfiles/ssh/
 dotfiles/ssh/*
 !dotfiles/ssh/.ssh/
