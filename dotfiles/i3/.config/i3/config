@@ -198,7 +198,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # open common applications
-set $mode_launcher Launch: [f]irefox [e]ditor [v]irtualbox [z]athura
+set $mode_launcher Launch: [f]irefox [e]ditor [v]irtualbox vm[w]are [z]athura
 mode "$mode_launcher" {
         bindsym f exec firefox
         bindsym --release f mode "default"
@@ -206,6 +206,8 @@ mode "$mode_launcher" {
         bindsym --release e mode "default"
         bindsym v exec virtualbox
         bindsym --release v mode "default"
+        bindsym w exec vmware
+        bindsym --release w mode "default"
         bindsym z exec zathura
         bindsym --release z mode "default"
 
