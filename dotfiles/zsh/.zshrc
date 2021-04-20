@@ -179,3 +179,6 @@ export PATH="/home/kw/.local/bin:$PATH"
 bindkey -v
 
 cursor_mode
+
+# zsh-bd
+source $HOME/.config/zsh/plugins/bd/bd.zsh
