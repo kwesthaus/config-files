@@ -10,5 +10,6 @@
     "signal": "comment",
     "URxvt": "terminal",
     "Vmware": "vector-square",
-    "VirtualBox*": "box"
+    "VirtualBox*": "box",
+    "Mattermost": "comment"
 }
