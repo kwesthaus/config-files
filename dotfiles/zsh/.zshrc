@@ -23,13 +23,13 @@ powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
 alias batl='bat --paging never'
-alias gs='git status'
-alias gd='git diff'
 alias ga='git add'
-alias gc='git commit'
 alias gb='git branch'
+alias gc='git commit'
+alias gd='git diff'
 alias glo='git log --pretty=oneline'
 alias glon="git log --pretty=oneline | head -n"
+alias gs='git status'
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
