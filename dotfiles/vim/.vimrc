@@ -35,6 +35,8 @@ Plugin 'preservim/tagbar'
 
 Plugin 'kwesthaus/jfw.vim'
 
+Plugin 'preservim/nerdtree'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -95,6 +97,7 @@ nnoremap <F5> :!g++ -Wall -Wextra % -o %:r.out<CR>
 nnoremap <F6> :!./%:r.out<CR>
 nnoremap <leader>q :TagbarOpen fj<CR>
 nnoremap <leader>v :term grip -b %<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
 
 set timeout
 set timeoutlen=1000
