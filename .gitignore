@@ -80,6 +80,7 @@ root/ssh/root/.ssh/*
 usr/*
 !usr/keyboard/
 !usr/mic-toggle/
+!usr/monitor-scale/
 !usr/nas-mount/
 !usr/openvpn/
 !usr/osu/
