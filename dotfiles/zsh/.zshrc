@@ -87,6 +87,8 @@ export KEYTIMEOUT=1
 
 export CHROOT=$HOME/clean-chroots
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/active
 source /usr/bin/virtualenvwrapper.sh

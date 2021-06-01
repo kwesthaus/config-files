@@ -34,6 +34,7 @@ dotfiles/ssh/*
 !dotfiles/ssh/.ssh/
 dotfiles/ssh/.ssh/*
 !dotfiles/ssh/.ssh/config
+!dotfiles/ssh-agent/
 !dotfiles/tmux/
 !dotfiles/vim/
 dotfiles/vim/*
