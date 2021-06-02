@@ -206,3 +206,8 @@ bindsym $mod+p mode "$mode_launcher"
 bar {
         status_command i3status
 }
+
+default_border pixel 3
+smart_borders on
+gaps inner 8
+gaps outer -8
