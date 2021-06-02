@@ -184,10 +184,12 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # open common applications
-set $mode_launcher Launch: [b]rowser
+set $mode_launcher Launch: [b]rowser [e]ditor
 mode "$mode_launcher" {
         bindsym b exec firefox
         bindsym --release b mode "default"
+        bindsym e exec i3-sensible-terminal -e i3-sensible-editor
+        bindsym --release e mode "default"
 
         # back to normal
         bindsym Return mode "default"
