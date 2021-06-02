@@ -45,6 +45,7 @@ dotfiles/vscode/*
 !dotfiles/vscode/.config/
 !dotfiles/wallpapers/
 !dotfiles/xfce/
+!dotfiles/xorg/
 !dotfiles/zsh/
 !dotfiles/.stowrc
 
