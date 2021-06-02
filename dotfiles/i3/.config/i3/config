@@ -35,6 +35,11 @@ exec --no-startup-id xset r rate 200 30
 exec --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Natural Scrolling Enabled" 1
 exec --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Tapping Enabled" 1
 
+# set background
+# credit /u/nite4awk
+# https://www.reddit.com/r/calvinandhobbes/comments/14571g/so_i_made_some_calvin_hobbes_walls/
+exec --no-startup-id feh --bg-fill ~/.wallpapers/calvin-hobbes-tiltshift.jpg
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
