@@ -211,3 +211,20 @@ default_border pixel 3
 smart_borders on
 gaps inner 8
 gaps outer -8
+
+# Set window border colors
+set $fg         #f0f0f0
+set $bg         #0f0f0f
+set $in         #9ef1cd
+set $urg        #f00000
+set $foc        #eeb037
+set $unf        #234218
+
+# class                 border  backgr. text indicator child_border
+client.focused          $foc    $bg     $fg  $in       $foc
+client.focused_inactive $unf    $bg     $fg  $in       $unf
+client.unfocused        $unf    $bg     $fg  $in       $unf
+client.urgent           $urg    $bg     $fg  $in       $urg
+client.placeholder      $bg     $bg     $fg  $in       $bg
+
+client.background       $bg
