@@ -81,7 +81,6 @@ cursor_mode
 
 export EDITOR=vim
 
-export TERM="xterm-256color"
 
 export KEYTIMEOUT=1
 
