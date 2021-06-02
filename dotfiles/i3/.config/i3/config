@@ -228,3 +228,19 @@ client.urgent           $urg    $bg     $fg  $in       $urg
 client.placeholder      $bg     $bg     $fg  $in       $bg
 
 client.background       $bg
+
+# autostart windows
+assign [class="^KeePassXC$"] 6
+# https://github.com/i3/i3/issues/2060
+for_window [class="^Spotify$"] move to workspace 7
+assign [class="^Slack$"] 8
+assign [class="^discord$"] 9
+assign [class="^Thunderbird$"] 10
+
+exec keepassxc
+exec spotify
+exec slack
+exec discord
+exec thunderbird
+
+exec --no-startup-id i3-msg 'workspace 10'
