@@ -184,8 +184,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # open common applications
-set $mode_launcher Launch:
+set $mode_launcher Launch: [b]rowser
 mode "$mode_launcher" {
+        bindsym b exec firefox
+        bindsym --release b mode "default"
+
         # back to normal
         bindsym Return mode "default"
         bindsym Escape mode "default"
