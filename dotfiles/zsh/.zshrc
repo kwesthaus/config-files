@@ -19,9 +19,6 @@ compinit
 ################################################################################
 # I INSERTED MANUALLY EVERYTHING IN THIS BLOCK
 
-powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
-
 alias batl='bat --paging never'
 alias ga='git add'
 alias gb='git branch'
@@ -79,8 +76,10 @@ cursor_mode() {
 
 cursor_mode
 
-export EDITOR=vim
+powerline-daemon -q
+. /usr/share/powerline/bindings/zsh/powerline.zsh
 
+export EDITOR=vim
 
 export KEYTIMEOUT=1
 
