@@ -32,6 +32,7 @@ exec --no-startup-id nm-applet
 
 # xorg
 exec --no-startup-id xset r rate 200 30
+exec --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Natural Scrolling Enabled" 1
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
