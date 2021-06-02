@@ -23,6 +23,7 @@ dotfiles/*
 # whitelist specific files/folders under dotfiles
 # progressively allow directory (and contents), block contents, then allow
 # specific subfolder to allow only specific nested files/folders
+!dotfiles/alacritty/
 !dotfiles/bash/
 !dotfiles/gdb/
 !dotfiles/git/
