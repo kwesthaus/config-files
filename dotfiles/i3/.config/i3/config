@@ -164,6 +164,10 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# iterate through workspaces sequentially
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 workspace_auto_back_and_forth yes
 
 # reload the configuration file
