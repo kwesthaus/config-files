@@ -1,4 +1,5 @@
 [options]
+no_icon_names = true
 
 [general]
 
