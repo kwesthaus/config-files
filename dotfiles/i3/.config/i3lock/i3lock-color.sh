@@ -38,5 +38,8 @@ i3lock \
     --verif-align 1 \
     --wrong-align 1 \
     --ind-pos "160:475" \
+    \
+    --pass-media-keys \
+    --pass-screen-keys \
 
 killall -SIGUSR2 dunst
