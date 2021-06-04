@@ -5,7 +5,10 @@ CLEAR='#00000000'
 TRANSLUCENTWHITE='#ffffff7f'
 SOLIDRED='#ff0000ff'
 
+killall -SIGUSR1 dunst
+
 i3lock \
+    --nofork \
     --image $HOME/.wallpapers/greatbend-b29-16x9.jpg \
     \
     --force-clock \
@@ -35,3 +38,5 @@ i3lock \
     --verif-align 1 \
     --wrong-align 1 \
     --ind-pos "160:475" \
+
+killall -SIGUSR2 dunst
