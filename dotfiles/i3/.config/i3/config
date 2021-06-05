@@ -47,7 +47,7 @@ exec --no-startup-id feh --bg-fill ~/.wallpapers/calvin-hobbes-tiltshift.jpg
 exec_always --no-startup-id i3wsr --icons awesome --config $HOME/.config/i3wsr/config.toml
 
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
+set $refresh_i3status pkill -RTMIN+1 i3blocks
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
@@ -225,7 +225,7 @@ bindsym $mod+p mode "$mode_launcher"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3blocks
 }
 
 default_border pixel 3
