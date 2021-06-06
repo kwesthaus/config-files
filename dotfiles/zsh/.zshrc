@@ -99,6 +99,9 @@ source /usr/share/fzf/key-bindings.zsh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# nerd font icons quick access
+source /usr/lib/nerd-fonts-complete/i_all.sh
+
 # END MY BLOCK
 ################################################################################
 
