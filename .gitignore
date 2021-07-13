@@ -84,6 +84,7 @@ root/ssh/root/.ssh/*
 # usr
 !usr/
 usr/*
+!usr/calendar/
 !usr/fzf/
 !usr/keyboard/
 !usr/mic-toggle/
