@@ -174,6 +174,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# go to first clean workspace
+bindsym $mod+c exec --no-startup-id /usr/local/bin/available-workspace.py
+
 workspace_auto_back_and_forth yes
 
 # reload the configuration file
