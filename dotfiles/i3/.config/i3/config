@@ -228,7 +228,7 @@ bar {
         status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks
 }
 
-default_border pixel 3
+default_border pixel 4
 smart_borders on
 gaps inner 8
 gaps outer -8
