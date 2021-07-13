@@ -62,6 +62,9 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
+# Bind prtsc to xfce4-screenshooter
+bindsym Print exec xfce4-screenshooter
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
