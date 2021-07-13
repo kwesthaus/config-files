@@ -211,7 +211,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # open common applications
-set $mode_launcher Launch: [b]rowser [e]ditor [f]ile manager
+set $mode_launcher Launch: [b]rowser [e]ditor [f]ile manager [w]eather
 mode "$mode_launcher" {
         bindsym b exec firefox
         bindsym --release b mode "default"
@@ -219,6 +219,8 @@ mode "$mode_launcher" {
         bindsym --release e mode "default"
         bindsym f exec i3-sensible-terminal -e ranger
         bindsym --release f mode "default"
+        bindsym w exec --no-startup-id i3-sensible-terminal -e /usr/local/bin/weather.sh
+        bindsym --release w mode "default"
 
         # back to normal
         bindsym Return mode "default"

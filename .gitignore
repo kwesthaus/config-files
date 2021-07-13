@@ -91,4 +91,5 @@ usr/*
 !usr/openvpn/
 !usr/osu/
 !usr/restic-backup/
+!usr/weather/
 !usr/.stowrc
