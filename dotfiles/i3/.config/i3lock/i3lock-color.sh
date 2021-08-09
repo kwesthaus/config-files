@@ -10,6 +10,7 @@ killall -SIGUSR1 dunst
 i3lock \
     --nofork \
     --image $HOME/.wallpapers/greatbend-b29-16x9.jpg \
+    --tiling \
     \
     --force-clock \
     --time-color $SOLIDWHITE \
