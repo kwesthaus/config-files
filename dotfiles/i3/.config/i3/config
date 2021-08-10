@@ -264,12 +264,12 @@ client.placeholder      $bg     $bg     $fg  $in       $bg
 client.background       $bg
 
 # autostart windows
-assign [class="^KeePassXC$"] 6
+assign [class="^KeePassXC$"] workspace number 6
 # https://github.com/i3/i3/issues/2060
-for_window [class="^Spotify$"] move to workspace 7
-assign [class="^Slack$"] 8
-assign [class="^discord$"] 9
-assign [class="^Thunderbird$"] 10
+for_window [class="^Spotify$"] move to workspace number 7
+assign [class="^Slack$"] workspace number 8
+assign [class="^discord$"] workspace number 9
+assign [class="^Thunderbird$"] workspace number 10
 
 exec keepassxc
 exec spotify
@@ -277,4 +277,4 @@ exec slack
 exec discord
 exec thunderbird
 
-exec --no-startup-id i3-msg 'workspace 10'
+exec --no-startup-id i3-msg 'workspace number 10'
