@@ -247,6 +247,23 @@ mode "$mode_launcher" {
 
 bindsym $mod+p mode "$mode_launcher"
 
+# control power level
+set $mode_power Power: [l]ogout [s]uspend [h]ibernate [p]oweroff [r]eboot
+mode "$mode_power" {
+        bindsym l exec i3-msg exit
+        bindsym s exec systemctl suspend
+        bindsym h exec systemctl hibernate
+        bindsym p exec systemctl poweroff
+        bindsym r exec systemctl reboot
+
+        # back to normal
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+slash mode "default"
+}
+
+bindsym $mod+slash mode "$mode_power"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
