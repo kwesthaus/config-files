@@ -84,6 +84,7 @@ root/ssh/root/.ssh/*
 # usr
 !usr/
 usr/*
+!usr/alacritty/
 !usr/available-workspace/
 !usr/calendar/
 !usr/fzf/
