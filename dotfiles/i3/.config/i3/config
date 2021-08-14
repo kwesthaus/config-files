@@ -251,8 +251,8 @@ bindsym $mod+p mode "$mode_launcher"
 set $mode_power Power: [l]ogout [s]uspend [h]ibernate [p]oweroff [r]eboot
 mode "$mode_power" {
         bindsym l exec i3-msg exit
-        bindsym s exec systemctl suspend
-        bindsym h exec systemctl hibernate
+        bindsym s mode "default"; exec systemctl suspend
+        bindsym h mode "default"; exec systemctl hibernate
         bindsym p exec systemctl poweroff
         bindsym r exec systemctl reboot
 
