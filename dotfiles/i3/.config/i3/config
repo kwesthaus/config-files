@@ -302,9 +302,9 @@ assign [class="^discord$"] workspace number 9
 assign [class="^Thunderbird$"] workspace number 10
 
 exec keepassxc
-exec spotify
-exec slack
-exec discord
+exec --no-startup-id spotify
+exec --no-startup-id slack
+exec --no-startup-id discord
 exec thunderbird
 
 exec --no-startup-id i3-msg 'workspace number 10'
