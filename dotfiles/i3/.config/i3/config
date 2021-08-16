@@ -34,14 +34,14 @@ exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 
 # xorg
-exec --no-startup-id xset r rate 200 30
-exec --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Natural Scrolling Enabled" 1
-exec --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Tapping Enabled" 1
+exec_always --no-startup-id xset r rate 200 30
+exec_always --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop "SYNA328B:00 06CB:CD50 Touchpad" "libinput Tapping Enabled" 1
 
 # set background
 # credit /u/nite4awk
 # https://www.reddit.com/r/calvinandhobbes/comments/14571g/so_i_made_some_calvin_hobbes_walls/
-exec --no-startup-id feh --bg-fill ~/.wallpapers/calvin-hobbes-tiltshift.jpg
+exec_always --no-startup-id feh --bg-fill ~/.wallpapers/calvin-hobbes-tiltshift.jpg
 
 # enable auto-updating workspace icon names
 exec_always --no-startup-id i3wsr --icons awesome --config $HOME/.config/i3wsr/config.toml
