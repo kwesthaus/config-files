@@ -72,7 +72,7 @@ bindsym Print exec xfce4-screenshooter
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -230,9 +230,9 @@ set $mode_launcher Launch: [b]rowser [e]ditor [f]ile manager [w]eather [c]alenda
 mode "$mode_launcher" {
         bindsym b exec firefox
         bindsym --release b mode "default"
-        bindsym e exec i3-sensible-terminal -e i3-sensible-editor
+        bindsym e exec --no-startup-id i3-sensible-terminal -e i3-sensible-editor
         bindsym --release e mode "default"
-        bindsym f exec i3-sensible-terminal -e ranger
+        bindsym f exec --no-startup-id i3-sensible-terminal -e ranger
         bindsym --release f mode "default"
         bindsym w exec --no-startup-id i3-sensible-terminal -e /usr/local/bin/weather.sh
         bindsym --release w mode "default"
