@@ -90,6 +90,7 @@ usr/*
 !usr/fzf/
 !usr/keyboard/
 !usr/mic-toggle/
+!usr/monitor-layout/
 !usr/nas-mount/
 !usr/openvpn/
 !usr/osu/
