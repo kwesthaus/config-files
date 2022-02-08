@@ -13,8 +13,9 @@ i3pid=$(pidof i3)
 if [ $builtin_c -eq 0 ] && [ $hdmi_c -eq 0 ]; then
     echo "both monitors attached"
     xrandr \
-        --output eDP-1 --primary --mode 1920x1080 --pos 1600x0 --rotate normal \
-        --output HDMI-1 --mode 1280x1024 --pos 0x0 --rotate normal --scale 1.25x1.25
+        --output eDP-1 --primary --mode 1920x1080 --pos 2400x0 --rotate normal \
+        --output HDMI-1 --mode 2400x1350 --pos 0x0 --rotate normal
+    sleep 1
     [[ ! -z "$i3pid" ]] && i3-msg "restart"
 elif [ $builtin_c -eq 0 ] && [ $hdmi_d -eq 0 ]; then
     echo "only laptop monitor attached"
@@ -23,8 +24,10 @@ elif [ $builtin_c -eq 0 ] && [ $hdmi_d -eq 0 ]; then
     xrandr \
         --output eDP-1 --primary --mode 1920x1080 --pos 1600x0 --rotate normal \
         --output HDMI-1 --off
-    [[ ! -z "$i3pid" ]] && i3-msg "workspace --no-auto-back-and-forth number $focused"
+    sleep 1
     [[ ! -z "$i3pid" ]] && i3-msg "restart"
+    sleep 1
+    [[ ! -z "$i3pid" ]] && i3-msg "workspace --no-auto-back-and-forth number $focused"
 else
     echo "unexpected monitor state"
     return 255
