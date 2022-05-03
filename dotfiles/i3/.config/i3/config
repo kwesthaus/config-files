@@ -68,8 +68,30 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
-# Bind prtsc to xfce4-screenshooter
-bindsym Print exec xfce4-screenshooter
+# fullscreen screenshot
+# credit qxxxb
+bindsym Print exec --no-startup-id \
+    maim | \
+    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (fullscreen) taken"
+
+# selection screenshot
+# credit qxxxb
+bindsym Shift+Print exec --no-startup-id \
+    maim --select --hidecursor | \
+    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (selection) taken"
+
+# window screenshot
+# credit qxxxb
+bindsym --release $mod+Print exec --no-startup-id \
+    w=$(xdotool selectwindow) && \
+    maim --window=$w | \
+    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (window) taken"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
