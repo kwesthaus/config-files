@@ -49,8 +49,9 @@ exec_always --no-startup-id feh --bg-fill ~/.wallpapers/calvin-hobbes-tiltshift.
 # enable auto-updating workspace icon names
 exec_always --no-startup-id i3wsr --icons awesome --config $HOME/.config/i3wsr/config.toml
 
-# enable copy to clipboard in xfce4-screenshooter
-exec --no-startup-id xfce4-clipman
+# without a clipboard manager, exiting the app copied from means you can no longer paste
+# https://stackoverflow.com/a/3571949
+bindsym $mod+m exec --no-startup-id CM_LAUNCHER=rofi clipmenu
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status pkill -RTMIN+1 i3blocks
