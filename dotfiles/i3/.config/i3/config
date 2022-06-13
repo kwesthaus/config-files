@@ -327,12 +327,12 @@ exec --no-startup-id /usr/local/bin/new-display-mode.sh
 exec --no-startup-id /usr/local/bin/monitor-layout.sh
 
 # autostart windows
-assign [class="^KeePassXC$"] workspace number 6
+assign [class="^KeePassXC$"] workspace number 2
 # https://github.com/i3/i3/issues/2060
 # https://github.com/i3/i3/issues/4155
-for_window [class="^Spotify$"] move --no-auto-back-and-forth to workspace number 7
-assign [class="^Slack$"] workspace number 8
-assign [class="^discord$"] workspace number 9
+for_window [class="^Spotify$"] move --no-auto-back-and-forth to workspace number 9
+assign [class="^discord$"] workspace number 1
+assign [class="^Slack$"] workspace number 1
 assign [class="^Thunderbird$"] workspace number 10
 
 exec keepassxc
@@ -341,4 +341,5 @@ exec --no-startup-id slack
 exec --no-startup-id discord
 exec thunderbird
 
-exec --no-startup-id i3-msg 'workspace number 10'
+exec --no-startup-id i3-msg 'workspace number 5'
+exec --no-startup-id i3-msg 'workspace number 6'
