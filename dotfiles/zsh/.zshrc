@@ -81,6 +81,8 @@ cursor_mode
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
+path+=('/opt/winchecksec/build')
+
 export EDITOR=vim
 
 export KEYTIMEOUT=1
