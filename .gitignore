@@ -67,6 +67,7 @@ etc/*
 !etc/keyboard/
 !etc/.stowrc
 !etc/pkglist/
+!etc/opt/
 
 # root
 !root/
