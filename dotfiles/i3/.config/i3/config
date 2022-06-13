@@ -323,6 +323,9 @@ client.placeholder      $bg     $bg     $fg  $in       $bg
 
 client.background       $bg
 
+exec --no-startup-id /usr/local/bin/new-display-mode.sh
+exec --no-startup-id /usr/local/bin/monitor-layout.sh
+
 # autostart windows
 assign [class="^KeePassXC$"] workspace number 6
 # https://github.com/i3/i3/issues/2060
