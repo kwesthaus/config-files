@@ -47,6 +47,7 @@ alias rsync='rsync --progress'
 alias nmapf='nmap --min-rate 4500 --max-rtt-timeout 1500ms'
 alias dirty='watch -d grep -e Dirty: -e Writeback: /proc/meminfo'
 alias rz='rizin'
+alias z='zathura'
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
