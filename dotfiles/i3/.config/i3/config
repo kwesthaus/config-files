@@ -69,30 +69,55 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
-# fullscreen screenshot
+# fullscreen screenshot to clipboard
 # credit qxxxb
 bindsym Print exec --no-startup-id \
     maim | \
-    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
     xclip -selection clipboard -t image/png && \
-    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (fullscreen) taken"
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (fullscreen) copied"
 
-# selection screenshot
+# selection screenshot to clipboard
 # credit qxxxb
 bindsym Shift+Print exec --no-startup-id \
     maim --select --hidecursor | \
-    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
     xclip -selection clipboard -t image/png && \
-    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (selection) taken"
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (selection) copied"
 
-# window screenshot
+# window screenshot to clipboard
 # credit qxxxb
 bindsym --release $mod+Print exec --no-startup-id \
     w=$(xdotool selectwindow) && \
     maim --window=$w | \
-    tee ~/Downloads/screenshots/$(date -I"seconds").png | \
     xclip -selection clipboard -t image/png && \
-    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (window) taken"
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (window) copied"
+
+# fullscreen screenshot to file (and clipboard)
+# credit qxxxb
+bindsym Ctrl+Print exec --no-startup-id \
+    f=$(zenity --file-selection --save) && \
+    maim | \
+    tee $f | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (fullscreen) saved"
+
+# selection screenshot to file (and clipboard)
+# credit qxxxb
+bindsym Ctrl+Shift+Print exec --no-startup-id \
+    f=$(zenity --file-selection --save) && \
+    maim --select --hidecursor | \
+    tee $f | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (selection) saved"
+
+# window screenshot to file (and clipboard)
+# credit qxxxb
+bindsym --release Ctrl+$mod+Print exec --no-startup-id \
+    f=$(zenity --file-selection --save) && \
+    w=$(xdotool selectwindow) && \
+    maim --window=$w | \
+    tee $f | \
+    xclip -selection clipboard -t image/png && \
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot (window) saved"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
