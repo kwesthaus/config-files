@@ -104,6 +104,9 @@ set timeoutlen=1000
 set ttimeout
 set ttimeoutlen=0
 
+let g:markdown_fenced_languages = ['sh', 'bash', 'zsh', 'python', 'c', 'cpp', 'java', 'html', 'javascript', 'rust']
+let g:markdown_minlines = 200
+
 set noshowmode
 let g:powerline_pycmd="py3"
 " set termguicolors
