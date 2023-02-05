@@ -1,3 +1,3 @@
 #!/bin/sh
-curl "wttr.in/Seattle"
+curl "wttr.in/Bellevue"
 read -p "Enter to quit"
