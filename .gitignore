@@ -98,4 +98,5 @@ usr/*
 !usr/osu/
 !usr/restic-backup/
 !usr/weather/
+!usr/wifi-mon/
 !usr/.stowrc
