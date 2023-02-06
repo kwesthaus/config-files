@@ -299,10 +299,10 @@ mode "$mode_launcher" {
         # back to normal
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+p mode "default"
+        bindsym $mod+u mode "default"
 }
 
-bindsym $mod+p mode "$mode_launcher"
+bindsym $mod+u mode "$mode_launcher"
 
 # control power level
 set $mode_power Power: [l]ogout [s]uspend [h]ibernate [p]oweroff [r]eboot
