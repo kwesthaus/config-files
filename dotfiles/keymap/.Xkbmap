@@ -1,1 +1,1 @@
--types "complete+orville" -symbols "pc+us+inet(evdev)+terminate(ctrl_alt_bksp)+orville(esc-to-compose)+orville(caps-to-esc)+orville(rctl-to-menu)+orville(menu-to-rctl)+orville(vim-arrows)+orville(mail-pane-cycle)+orville(f1-mic-mute)" -verbose 10
+-types "complete+orville" -symbols "pc+us+inet(evdev)+terminate(ctrl_alt_bksp)+orville(esc-to-compose)+orville(caps-to-esc)+orville(rctl-to-menu)+orville(menu-to-rctl)+orville(vim-arrows)+orville(mail-pane-cycle)+orville(f1-mic-mute)+orville(function-brightness-external)" -verbose 10

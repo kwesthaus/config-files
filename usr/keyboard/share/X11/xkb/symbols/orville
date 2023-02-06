@@ -116,3 +116,16 @@ xkb_symbols "f1-mic-mute" {
         actions[Group1] = [ NoAction(), RedirectKey(keycode=<FK20>, clearmods=Mod4) ]
     };
 };
+
+partial function_keys
+xkb_symbols "function-brightness-external" {
+    // for external keyboard - see above tables
+    // Fn+F1
+    key <I152> { [ XF86Macro1 ] };
+    // Fn+F2
+    key <I180> { [ XF86Macro2 ] };
+    // Fn+F3
+    key <I148> { [ XF86MonBrightnessDown ] };
+    // Fn+F4
+    key <I179> { [ XF86MonBrightnessUp ] };
+};
