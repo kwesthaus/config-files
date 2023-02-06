@@ -68,6 +68,7 @@ etc/*
 !etc/.stowrc
 !etc/pkglist/
 !etc/opt/
+!etc/ddcutil/
 
 # root
 !root/
