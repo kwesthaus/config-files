@@ -112,3 +112,7 @@ let g:powerline_pycmd="py3"
 " set termguicolors
 colorscheme gruvbox
 set background=dark
+
+set autochdir
+set tags=tags;/
+
