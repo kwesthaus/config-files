@@ -360,7 +360,7 @@ assign [class="^KeePassXC$"] workspace number 2
 for_window [class="^Spotify$"] move --no-auto-back-and-forth to workspace number 9
 assign [class="^discord$"] workspace number 1
 assign [class="^Slack$"] workspace number 1
-assign [class="^Thunderbird$"] workspace number 10
+assign [class="^thunderbird$"] workspace number 10
 
 exec keepassxc
 exec --no-startup-id spotify
