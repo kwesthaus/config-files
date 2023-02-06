@@ -105,6 +105,11 @@ xkb_symbols "mail-pane-cycle" {
 
 partial function_keys
 xkb_symbols "f1-mic-mute" {
+    // as shown by the tables above, my laptop keyboard is weird and emits
+    //   the F1 symbol with the mod4 state when pressing the Fn+F1 keys, so we
+    //   might as well use mod4+F1 on both keyboards and save Fn+F1 on the
+    //   external keyboard for something else
+    //
     key <FK01> {
         type[Group1] = "PC_SUPER_LEVEL2",
         symbols[Group1] = [ F1, XF86AudioMicMute ],
