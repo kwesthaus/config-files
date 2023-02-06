@@ -66,6 +66,10 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 
 # Bind brightness keys to brightnessctl
+# brightnessctl only works for internal display
+# ddcutil only works for external display
+bindsym XF86Macro1 exec --no-startup-id ddcutil --edid "00ffffffffffff00220e2537010101012f200103803c22782a8cb5af4f43ab260e5054a10800d100d1c0b300a9c095008180810081c0565e00a0a0a029503020350055502100001a000000fd0037901efa3c000a202020202020000000fc00485020583237710a2020202020000000ff0036434d323437315a33530a2020017d" setvcp 0x10 - 20
+bindsym XF86Macro2 exec --no-startup-id ddcutil --edid "00ffffffffffff00220e2537010101012f200103803c22782a8cb5af4f43ab260e5054a10800d100d1c0b300a9c095008180810081c0565e00a0a0a029503020350055502100001a000000fd0037901efa3c000a202020202020000000fc00485020583237710a2020202020000000ff0036434d323437315a33530a2020017d" setvcp 0x10 + 20
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
