@@ -1,3 +1,5 @@
+// https://www.charvolant.org/doug/xkb/html/node5.html#227
+
 partial alphanumeric_keys
 xkb_symbols "esc-to-compose" {
     key <ESC> {	[ Multi_key ] };
@@ -52,7 +54,7 @@ xkb_symbols "mail-pane-cycle" {
     };
 };
 
-partial modifier_keys
+partial function_keys
 xkb_symbols "f1-mic-mute" {
     key <FK01> {
         type[Group1] = "PC_SUPER_LEVEL2",
