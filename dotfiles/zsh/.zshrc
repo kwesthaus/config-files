@@ -51,6 +51,7 @@ alias z='zathura'
 bindiff() { diff <(xxd $1) <(xxd $2) }
 tcpopen() { sudo iptables -A TCP -p tcp --dport "$@" -j ACCEPT }
 udpopen() { sudo iptables -A UDP -p udp --dport "$@" -j ACCEPT }
+wifistats() { ssh homewifiap iw dev "$@" station dump }
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
