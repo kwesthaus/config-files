@@ -69,6 +69,7 @@ etc/*
 !etc/pkglist/
 !etc/opt/
 !etc/ddcutil/
+!etc/battery-limit/
 
 # root
 !root/
@@ -89,6 +90,7 @@ root/ssh/root/.ssh/*
 usr/*
 !usr/alacritty/
 !usr/available-workspace/
+!usr/battery-limit/
 !usr/calendar/
 !usr/fzf/
 !usr/keyboard/

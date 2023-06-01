@@ -1,0 +1,7 @@
+[Unit]
+Description=Run a command to check the current charge state
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /usr/local/bin/update-charge-state.sh
