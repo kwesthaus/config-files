@@ -22,9 +22,35 @@ font pango:Iosevka Nerd Font Mono 11
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
+
+
+# THIS SETUP IS REALLY MESSY, IT MIGHT BE BETTER TO SWITCH TO xidlehook AND MANUALLY CONTROL DPMS STATE RATHER THAN USING TIMERS
+##
+# s for screensaver
+exec_always --no-startup-id xset s on
+# 3 minute timeout, then 10 second "cycle time" (used by xss-lock to start locker)
+# note: if the session is already locked (e.g. because our last action was to type "loginctl lock-session") when the idle timeout is reached,
+#       then xss-lock is not triggered (which is good because we don't want to dim/double-lock when we are already locked)
+exec_always --no-startup-id xset s 180 10
+# 5 minute timeout, no cycle time
+# exec_always --no-startup-id xset s 300
+
+# screen off after 3 minutes, plus the cycle time (dimmer time), plus 1 second to make sure xss-lock has started i3lock before we standby
+# for LCDs, no difference between standby/suspend/off, so just set first timer (standby) instead of all three
+exec_always --no-startup-id xset +dpms
+exec_always --no-startup-id xset dpms 191
+# exec_always --no-startup-id xset dpms 300 300 300
+
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/.config/i3lock/i3lock-color.sh
+
+# on screensaver timeout, run notifier, then after screensaver cycle time, send SIGTERM to notifier (dimmer) and run locker
+# for some reason things can only draw to the screen after more activity (e.g. moving the mouse), so when unlocking, our previous screen contents show for a split second before the i3lock window shows up. I think --transfer-sleep-lock is supposed to fix this, but I couldn't get it to work
+# dim.sh is told to take 8 seconds so it completes dimming and is waiting a bit before it receives SIGTERM (basedon xset s parameters above, currently set to 10 seconds)
+exec_always --no-startup-id pkill xss-lock; xss-lock -n "$HOME/.config/i3lock/dim.sh 8" -- $HOME/.config/i3lock/i3lock-color.sh
+
+
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -136,7 +162,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+x exec "rofi -modi drun,run,ssh -show drun -show-icons"
 
 # lock screen
-bindsym $mod+semicolon exec --no-startup-id $HOME/.config/i3lock/i3lock-color.sh
+# relies on xss-lock
+bindsym $mod+semicolon exec --no-startup-id loginctl lock-session
 
 # change focus
 bindsym $mod+h focus left
