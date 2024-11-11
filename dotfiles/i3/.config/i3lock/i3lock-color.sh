@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "starting i3lock-color.sh"
+
 SOLIDWHITE='#ffffffff'
 CLEAR='#00000000'
 TRANSLUCENTWHITE='#ffffff7f'
@@ -42,5 +44,7 @@ i3lock \
     \
     --pass-media-keys \
     --pass-screen-keys \
+
+echo "stopping i3lock-color.sh"
 
 killall -SIGUSR2 dunst
