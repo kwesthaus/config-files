@@ -6,13 +6,16 @@ no_icon_names = true
 [aliases]
 
 [icons]
-firefox = ""
-KeePassXC = ""
-Spotify = ""
-Slack = ""
-discord = ""
-Zathura = ""
-libreoffice-writer = ""
-libreoffice-calc = ""
-libreoffice-impress = ""
-thunderbird = ""
+firefox = "<span font_size='20pt'></span>"
+Bitwarden = "<span font_size='20pt'></span>"
+KeePassXC = "<span font_size='20pt'></span>"
+Spotify = "<span font_size='20pt'></span>"
+Slack = "<span font_size='20pt'></span>"
+discord = "<span font_size='20pt'></span>"
+Zathura = "<span font_size='20pt'></span>"
+libreoffice-writer = "<span font_size='20</span>pt'>"
+libreoffice-calc = "<span font_size='20pt'></span>"
+libreoffice-impress = "<span font_size='20pt'></span>"
+"org.mozilla.Thunderbird" = "<span font_size='20pt'></span>"
+Alacritty = "<span font_size='20pt'></span>"
+
