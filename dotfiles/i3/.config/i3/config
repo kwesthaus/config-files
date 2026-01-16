@@ -357,6 +357,12 @@ bindsym $mod+slash mode "$mode_power"
 bar {
         tray_output eDP-1
         status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks
+
+    colors {
+        # default (from https://i3wm.org/docs/userguide.html#_configuring_i3bar)
+        # inactive_workspace #333333 #222222 #888888
+        inactive_workspace #777777 #222222 #888888
+    }
 }
 
 default_border pixel 4
